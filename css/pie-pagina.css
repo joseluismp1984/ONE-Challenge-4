@@ -1,0 +1,18 @@
+.pie-pagina {
+  background-color: #ffffff;
+  width: 100%;
+  padding: 32px;
+  height: 102px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  text-align: center;
+}
+
+.contenedor-pie p {
+  color: #464646;
+  font-size: 16px;
+  font-weight: 600;
+}

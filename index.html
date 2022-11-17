@@ -29,6 +29,9 @@
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/normalize.css" />
     <link rel="stylesheet" href="./css/encabezado.css" />
+    <link rel="stylesheet" href="./css/banner.css" />
+    <link rel="stylesheet" href="./css/formulario.css" />
+    <link rel="stylesheet" href="./css/pie-pagina.css" />
   </head>
   <body>
     <header id="encabezado" class="encabezado">
@@ -64,5 +67,109 @@
         />
       </div>
     </header>
+    <main>
+      <section id="banner" class="banner">
+        <div id="contenedor-banner" class="contenedor-banner">
+          <div id="promocion" class="promocion">
+            <h2 id="promocion-titulo" class="promocion-titulo">
+              Febrero Promocional
+            </h2>
+            <p id="promocion-texto" class="promocion-texto">
+              Productos Seleccionados con 33% de descuentos
+            </p>
+            <button id="promocion-boton" class="promocion-boton">
+              Ver Promoción
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section id="principal" class="principal">
+        <div id="contenedor-principal" class="contenedor-principal">
+          <div id="categoria-1" class="categorias">
+            <div id="nombre-categoria">
+              <h2></h2>
+              <button><img src="" alt="" /></button>
+            </div>
+
+            <div id="galeria-categoria">
+              <div id="producto">
+                <img src="" alt="" />
+                <h2></h2>
+                <p></p>
+                <a href=""></a>
+              </div>
+            </div>
+
+            <div></div>
+          </div>
+
+          <div id="categoria-2" class="categorias"></div>
+
+          <div id="categoria-3" class="categorias"></div>
+        </div>
+      </section>
+
+      <section id="formulario" class="formulario">
+        <div id="contenedor-formulario" class="contenedor-formulario">
+          <div id="informacion" class="informacion">
+            <div id="inf-logo" class="inf-logo">
+              <img class="inf-logo-img" src="./img/logo-tienda.svg" alt="" />
+              <h2 class="inf-logo-nombre"><span>Alura</span>Geek</h2>
+            </div>
+
+            <nav id="nav" class="nav">
+              <a href="#">Quienes somos</a>
+              <a href="#">Politica de privacidad</a>
+              <a href="#">Programa de fidelidad</a>
+              <a href="#">Nuestras tiendas</a>
+              <a href="#">Quiero ser franquiciado</a>
+              <a href="#">Anúncie aquí</a>
+            </nav>
+          </div>
+
+          <form id="form" class="form" action="">
+            <h2 id="form-titulo" class="form-titulo">Hable con nosotros</h2>
+            <input
+              id="form-nombre"
+              class="form-nombre"
+              name="nombre"
+              type="text"
+              placeholder="Escribe tu nombre"
+              pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$"
+              title="solo acepta letras y espacios en blanco"
+              minlength="6"
+              maxlength="35"
+              required
+            />
+            <textarea
+              id="form-mensaje"
+              class="form-mensaje"
+              name="form-mensaje"
+              cols="30"
+              rows="10"
+              placeholder="Escribe tu mensaje"
+              minlength="10"
+              maxlength="500"
+              required
+            ></textarea>
+            <input
+              id="form-boton"
+              class="form-boton"
+              type="submit"
+              value="Enviar Mensaje"
+            />
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer id="pie-pagina" class="pie-pagina">
+      <div id="contenedor-pie" class="contenedor-pie">
+        <p id="parrafo-1" class="parrafo-1">
+          Desarrollado por José Luis Martínez
+        </p>
+        <p id="parrafo-1" class="parrafo-1">&copy 2022</p>
+      </div>
+    </footer>
   </body>
 </html>

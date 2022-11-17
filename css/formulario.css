@@ -1,0 +1,135 @@
+.formulario {
+  background-color: #eaf2fd;
+  width: 100%;
+  padding: 16px;
+}
+
+.contenedor-formulario {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+/*--------------------------------*/
+.informacion {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+
+.inf-logo {
+  display: flex;
+  align-items: center;
+}
+.inf-logo-img {
+  width: 40px;
+  margin-right: 5px;
+}
+.inf-logo-nombre {
+  font-size: 19px;
+  color: #464646;
+  font-weight: 700;
+}
+.inf-logo-nombre span {
+  color: #2a7ae4;
+}
+
+.nav {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: center;
+}
+
+.nav a {
+  text-decoration: none;
+  font-size: 16px;
+  color: #464646;
+}
+/*--------------------------------*/
+
+.form {
+  display: flex;
+  gap: 8px;
+  flex-direction: column;
+  font-size: 16px;
+}
+
+.form-titulo {
+  font-weight: 700;
+  color: #464646;
+}
+
+.form-nombre {
+  width: 100%;
+  height: 56px;
+  color: black;
+  border: none;
+}
+
+.form-mensaje {
+  width: 100%;
+  height: 82px;
+  color: black;
+  border: none;
+}
+
+.form-nombre:focus,
+.form-mensaje:focus {
+  outline: none;
+}
+
+.form-boton {
+  border-style: none;
+  width: 133px;
+  height: 40px;
+  color: white;
+  background-color: #2a7ae4;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+/*###############################*/
+
+@media screen and (min-width: 575px) {
+  .formulario {
+    padding: 32px;
+  }
+  .contenedor-formulario {
+    flex-direction: row;
+    gap: 16px;
+  }
+  /*--------------------------------*/
+  .informacion {
+    width: 40%;
+    align-items: flex-start;
+  }
+  .nav {
+    align-items: flex-start;
+    gap: 24px;
+  }
+  /*--------------------------------*/
+  .form {
+    width: 60%;
+    gap: 16px;
+  }
+}
+
+@media screen and (min-width: 920px) {
+  .formulario {
+    display: flex;
+    justify-content: center;
+  }
+  .contenedor-formulario {
+    gap: 112px;
+    width: 80%;
+  }
+  .informacion {
+    flex-direction: row;
+    gap: 112px;
+  }
+  .nav {
+    width: 176px;
+  }
+}
