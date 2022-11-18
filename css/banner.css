@@ -65,8 +65,8 @@
 
 @media screen and (min-width: 920px) {
   .contenedor-banner {
-    justify-content: center;
     padding: 32px;
+    padding-left: 12%;
     width: 100%;
   }
   .promocion-texto {

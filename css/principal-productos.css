@@ -1,0 +1,142 @@
+.principal {
+  width: 100%;
+  background-color: #f5f5f5;
+}
+.contenedor-principal {
+  width: 100%;
+  padding: 32px;
+
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  align-items: center;
+}
+/*-------------------------------*/
+.categorias {
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+  justify-content: center;
+  align-items: center;
+}
+/*-------------------------------*/
+.nombre-categoria {
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.titulo-categoria {
+  font-size: 22px;
+  font-weight: 700;
+  color: #464646;
+}
+.btn-agregar-prod {
+  border-style: none;
+  text-decoration: none;
+  width: auto;
+  padding: 12px 16px;
+  font-size: 14px;
+  font-weight: 400;
+  color: white;
+
+  background-color: #2a7ae4;
+
+  vertical-align: center;
+  cursor: pointer;
+}
+
+/*-------------------------------*/
+.galeria-categoria {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: center;
+}
+.producto {
+  width: 47.2%;
+
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+
+  position: relative;
+}
+
+.icono-eliminar {
+  width: 17px;
+
+  position: absolute;
+  right: 53px;
+  top: 11px;
+}
+.icono-editar {
+  width: 17px;
+
+  position: absolute;
+  right: 11px;
+  top: 11px;
+}
+.producto-img {
+  width: 100%;
+}
+.producto h2 {
+  font-size: 14px;
+  font-weight: 500;
+  color: #464646;
+}
+.producto p {
+  font-size: 16px;
+  font-weight: 700;
+  color: #464646;
+}
+.producto span {
+  font-size: 14px;
+  font-weight: 500;
+  color: #464646;
+}
+
+@media screen and (min-width: 575px) {
+  .contenedor-principal {
+    padding: 32px;
+  }
+  .nombre-categoria {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .galeria-categoria {
+    justify-content: space-between;
+  }
+  .producto {
+    width: 30%;
+  }
+}
+
+@media screen and (min-width: 920px) {
+  .principal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .contenedor-principal {
+    width: 80%;
+    padding: 64px;
+  }
+  .titulo-categoria {
+    font-size: 32px;
+  }
+  .producto {
+    width: 14.4%;
+    gap: 8px;
+    margin-bottom: 30px;
+  }
+}

@@ -102,7 +102,7 @@
   }
   /*--------------------------------*/
   .informacion {
-    width: 40%;
+    width: 50%;
     align-items: flex-start;
   }
   .nav {
@@ -111,7 +111,7 @@
   }
   /*--------------------------------*/
   .form {
-    width: 60%;
+    width: 50%;
     gap: 16px;
   }
 }
@@ -122,14 +122,14 @@
     justify-content: center;
   }
   .contenedor-formulario {
-    gap: 112px;
+    gap: 30px;
     width: 80%;
   }
   .informacion {
     flex-direction: row;
-    gap: 112px;
+    gap: 30px;
   }
   .nav {
-    width: 176px;
+    width: 200px;
   }
 }

@@ -1,0 +1,126 @@
+.principal {
+  width: 100%;
+  background-color: #ffffff;
+}
+.contenedor-principal {
+  width: 100%;
+  padding: 16px;
+
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  align-items: center;
+}
+/*-------------------------------*/
+.categorias {
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+  justify-content: center;
+  align-items: center;
+}
+/*-------------------------------*/
+.nombre-categoria {
+  width: 100%;
+
+  display: flex;
+
+  justify-content: space-between;
+  align-items: center;
+}
+.titulo-categoria {
+  font-size: 22px;
+  font-weight: 700;
+  color: #464646;
+}
+.btn-ver-todo {
+  border-style: none;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 700;
+  color: #2a7ae4;
+
+  background-color: transparent;
+
+  vertical-align: center;
+}
+.btn-ver-todo img {
+  width: 10.6px;
+  margin-left: 5px;
+}
+/*-------------------------------*/
+.galeria-categoria {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: center;
+}
+.producto {
+  width: 47.2%;
+
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.producto img {
+  width: 100%;
+}
+.producto h2 {
+  font-size: 14px;
+  font-weight: 500;
+  color: #464646;
+}
+.producto p {
+  font-size: 16px;
+  font-weight: 700;
+  color: #464646;
+}
+.producto a {
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 700;
+  color: #2a7ae4;
+}
+
+@media screen and (min-width: 575px) {
+  .contenedor-principal {
+    padding: 32px;
+  }
+  .btn-ver-todo {
+    font-size: 16px;
+  }
+  .btn-ver-todo img {
+    width: 16px;
+    margin-left: 12px;
+  }
+  .producto {
+    width: 30%;
+  }
+  .producto a {
+    font-size: 16px;
+  }
+}
+
+@media screen and (min-width: 920px) {
+  .principal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .contenedor-principal {
+    width: 80%;
+    padding: 64px;
+  }
+  .titulo-categoria {
+    font-size: 32px;
+  }
+  .producto {
+    width: 14.4%;
+    gap: 16px;
+  }
+}
