@@ -1,0 +1,29 @@
+.principal-agregar {
+  width: 100%;
+  background-color: #f5f5f5;
+}
+.contenedor-agregar {
+  width: 100%;
+  padding: 16px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.agregar-prod {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.agregar-prod input {
+  width: 100%;
+}
+
+/*----------------------------------*/
+@media screen and (min-width: 575px) {
+}
+
+@media screen and (min-width: 920px) {
+}

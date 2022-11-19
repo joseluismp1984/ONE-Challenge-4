@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="index,follow" />
+    <title>AluraGeek</title>
+    <meta
+      name="description"
+      content="Tienda AluraGeek todo lo relacionado con juegos, consolas y accesorios. Modernos y estilo retro."
+    />
+    <link
+      rel="cononical"
+      href="https://joseluismp1984.github.io/ONE-Challenge-4/"
+    />
+    <link rel="icon" href="./img/favicon.svg" />
+    <link rel="apple-touch-icon" href="./img/favicon.svg" />
+    <meta name="theme-color" content="#FF6600" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Aqui comienzan hojas de estilos -->
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="stylesheet" href="./css/encabezado-agregar.css" />
+    <link rel="stylesheet" href="./css/principal-agregar.css" />
+    <link rel="stylesheet" href="./css/formulario.css" />
+    <link rel="stylesheet" href="./css/pie-pagina.css" />
+  </head>
+  <body>
+    <header id="encabezado" class="encabezado">
+      <div class="contenedor">
+        <div id="encabezado-logo" class="encabezado-logo">
+          <img class="logo-img" src="./img/logo-tienda.svg" alt="" />
+          <h2 class="logo-nombre"><span>Alura</span>Geek</h2>
+        </div>
+
+        <div id="encabezado-buscador" class="encabezado-buscador">
+          <input
+            id="buscador-input"
+            class="buscador-input"
+            type="text"
+            placeholder="¿Qué desea buscar?"
+          />
+
+          <img
+            id="buscador-img"
+            class="buscador-img"
+            src="./img/icono-buscador.svg"
+            alt="Icono de buscar"
+          />
+        </div>
+
+        <a id="encabezado-login" class="encabezado-login" href="#"
+          >Menú Administrador</a
+        >
+
+        <img
+          id="buscador-menu"
+          class="buscador-menu"
+          src="./img/icono-buscador-dark.svg"
+          alt="Icono de buscar"
+        />
+      </div>
+    </header>
+    <main>
+      <section id="principal-agregar" class="principal-agregar">
+        <div id="contenedor-agregar" class="contenedor-agregar">
+          <form id="agregar-prod" class="agregar-prod" action="">
+            <h2>Agregar nuevo producto</h2>
+            <input type="text" />
+            <input type="text" />
+            <input type="text" />
+            <input type="text" />
+            <textarea name="" id="" cols="30" rows="10"></textarea>
+            <input type="submit" />
+          </form>
+        </div>
+      </section>
+
+      <section id="formulario" class="formulario">
+        <div id="contenedor-formulario" class="contenedor-formulario">
+          <div id="informacion" class="informacion">
+            <div id="inf-logo" class="inf-logo">
+              <img class="inf-logo-img" src="./img/logo-tienda.svg" alt="" />
+              <h2 class="inf-logo-nombre"><span>Alura</span>Geek</h2>
+            </div>
+
+            <nav id="nav" class="nav">
+              <a href="#">Quienes somos</a>
+              <a href="#">Politica de privacidad</a>
+              <a href="#">Programa de fidelidad</a>
+              <a href="#">Nuestras tiendas</a>
+              <a href="#">Quiero ser franquiciado</a>
+              <a href="#">Anúncie aquí</a>
+            </nav>
+          </div>
+
+          <form id="form" class="form" action="">
+            <h2 id="form-titulo" class="form-titulo">Hable con nosotros</h2>
+            <input
+              id="form-nombre"
+              class="form-nombre"
+              name="nombre"
+              type="text"
+              placeholder="Escribe tu nombre"
+              pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$"
+              title="solo acepta letras y espacios en blanco"
+              minlength="6"
+              maxlength="35"
+              required
+            />
+            <textarea
+              id="form-mensaje"
+              class="form-mensaje"
+              name="form-mensaje"
+              cols="30"
+              rows="10"
+              placeholder="Escribe tu mensaje"
+              minlength="10"
+              maxlength="500"
+              required
+            ></textarea>
+            <input
+              id="form-boton"
+              class="form-boton"
+              type="submit"
+              value="Enviar Mensaje"
+            />
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer id="pie-pagina" class="pie-pagina">
+      <div id="contenedor-pie" class="contenedor-pie">
+        <p id="parrafo-1" class="parrafo-1">
+          Desarrollado por José Luis Martínez
+        </p>
+        <p id="parrafo-1" class="parrafo-1">&copy 2022</p>
+      </div>
+    </footer>
+  </body>
+</html>
