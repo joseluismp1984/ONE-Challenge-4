@@ -76,8 +76,9 @@
             <h2 class="agregar-titulo">Agregar nuevo producto</h2>
             <input
               class="forma-input"
-              type="text"
+              type="url"
               placeholder="URL de la imagen"
+              autocomplete="off"
               required
             />
             <!-- 
@@ -89,6 +90,7 @@
               placeholder="Categoria"
               pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$"
               title="solo acepta letras y espacios en blanco"
+              autocomplete="off"
               required
             />
             <input
@@ -97,6 +99,7 @@
               placeholder="Nombre del producto"
               pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$"
               title="solo acepta letras y espacios en blanco"
+              autocomplete="off"
               required
             />
             <input
@@ -105,6 +108,7 @@
               placeholder="Precio del producto"
               pattern="^\$?([1-9]{1}[0-9]{0,2}(\,[0-9]{3})*(\.[0-9]{0,2})?|[1-9]{1}[0-9]{0,}(\.[0-9]{0,2})?|0(\.[0-9]{0,2})?|(\.[0-9]{1,2})?)$"
               title="Puede tener $ numeros coma y puntos"
+              autocomplete="off"
               required
             />
             <textarea
@@ -117,6 +121,7 @@
               pattern="[a-z0-9ñçáéíóú\s]"
               title="Solo letras numeros y espacios en blanco"
               maxlength="500"
+              autocomplete="off"
               required
             ></textarea>
             <input
@@ -158,6 +163,7 @@
               title="solo acepta letras y espacios en blanco"
               minlength="6"
               maxlength="35"
+              autocomplete="off"
               required
             />
             <textarea
@@ -169,6 +175,7 @@
               placeholder="Escribe tu mensaje"
               minlength="10"
               maxlength="500"
+              autocomplete="off"
               required
             ></textarea>
             <input
