@@ -9,16 +9,42 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
 }
+
 .agregar-prod {
   display: flex;
   flex-direction: column;
   gap: 16px;
 }
 
-.agregar-prod input {
+.agregar-titulo {
+  font-size: 22px;
+  font-weight: 700;
+  color: #464646;
+}
+
+.forma-input {
+  border-style: none;
   width: 100%;
+  height: 56px;
+  padding: 10px;
+}
+
+.agregar-prod textarea {
+  height: 82px;
+}
+
+.forma-input:focus {
+  outline: none;
+}
+
+.btn-agregr-prod {
+  border-style: none;
+  height: 51px;
+  padding: 16px;
+  background-color: #2a7ae4;
+  color: white;
+  cursor: pointer;
 }
 
 /*----------------------------------*/
@@ -26,4 +52,11 @@
 }
 
 @media screen and (min-width: 920px) {
+  .principal-agregar {
+    display: flex;
+    justify-content: center;
+  }
+  .contenedor-agregar {
+    width: 40%;
+  }
 }

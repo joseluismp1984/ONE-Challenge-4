@@ -28,8 +28,8 @@
     <!-- Aqui comienzan hojas de estilos -->
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/normalize.css" />
-    <link rel="stylesheet" href="./css/encabezado-agregar.css" />
-    <link rel="stylesheet" href="./css/principal-agregar.css" />
+    <link rel="stylesheet" href="./css/encabezado-productos.css" />
+    <link rel="stylesheet" href="./css/principal-informacion.css" />
     <link rel="stylesheet" href="./css/formulario.css" />
     <link rel="stylesheet" href="./css/pie-pagina.css" />
   </head>
@@ -56,75 +56,78 @@
             alt="Icono de buscar"
           />
         </div>
-
-        <a id="encabezado-login" class="encabezado-login" href="#"
-          >Menú Administrador</a
-        >
-
-        <img
-          id="buscador-menu"
-          class="buscador-menu"
-          src="./img/icono-buscador-dark.svg"
-          alt="Icono de buscar"
-        />
       </div>
     </header>
     <main>
-      <section id="principal-agregar" class="principal-agregar">
-        <div id="contenedor-agregar" class="contenedor-agregar">
-          <form id="agregar-prod" class="agregar-prod" action="">
-            <h2 class="agregar-titulo">Agregar nuevo producto</h2>
-            <input
-              class="forma-input"
-              type="text"
-              placeholder="URL de la imagen"
-              required
-            />
-            <!-- 
-              pattern="([A-Z]:\\[^/:\*\?<>\|]+\.\w{2,6})|(\\{2}[^/:\*\?<>\|]+\.\w{2,6})"
-              title="Debe ser de la forma: C:\temp\this allows spaces\web.config" -->
-            <input
-              class="forma-input"
-              type="text"
-              placeholder="Categoria"
-              pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$"
-              title="solo acepta letras y espacios en blanco"
-              required
-            />
-            <input
-              class="forma-input"
-              type="text"
-              placeholder="Nombre del producto"
-              pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$"
-              title="solo acepta letras y espacios en blanco"
-              required
-            />
-            <input
-              class="forma-input"
-              type="text"
-              placeholder="Precio del producto"
-              pattern="^\$?([1-9]{1}[0-9]{0,2}(\,[0-9]{3})*(\.[0-9]{0,2})?|[1-9]{1}[0-9]{0,}(\.[0-9]{0,2})?|0(\.[0-9]{0,2})?|(\.[0-9]{1,2})?)$"
-              title="Puede tener $ numeros coma y puntos"
-              required
-            />
-            <textarea
-              class="forma-input"
-              name=""
-              id=""
-              cols="30"
-              rows="5"
-              placeholder="Descripción del producto"
-              pattern="[a-z0-9ñçáéíóú\s]"
-              title="Solo letras numeros y espacios en blanco"
-              maxlength="500"
-              required
-            ></textarea>
-            <input
-              class="btn-agregr-prod"
-              type="submit"
-              value="Agregar Producto"
-            />
-          </form>
+      <section id="principal-informacion" class="principal-informacion">
+        <div id="contenedor-informacion" class="contenedor-informacion">
+
+          <div class="informacion-individual">
+
+            <img class="informacion-img" src="./img/producto-1.png" alt="Imagen del producto">
+
+            <div class="informacion-prod">
+              <h2 class="titulo-infor">Producto XYZ</h2>
+              <p class="precio-infor">$ 60,00</p>
+              <p class="texto-infor">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis id unde soluta praesentium magnam, reprehenderit illo culpa nemo vitae nisi tempora impedit possimus consectetur asperiores distinctio autem sapiente saepe porro.</p>
+            </div>
+
+          </div>
+
+          <div id="similares" class="similares">
+
+            <div id="nombre-similares" class="nombre-similares">
+              <h2 id="titulo-similares" class="titulo-similares">Productos similares</h2>
+            </div>
+
+            <div id="galeria-similares" class="galeria-similares">
+              <div id="producto-1" class="producto">
+                <img src="./img/producto-1.png" alt="Imagen del producto" />
+                <h2>Producto XYZ</h2>
+                <p>$ 60,00</p>
+                <a href="">Ver producto</a>
+              </div>
+
+              <div id="producto-2" class="producto">
+                <img src="./img/producto-2.png" alt="Imagen del producto" />
+                <h2>Producto XYZ</h2>
+                <p>$ 60,00</p>
+                <a href="">Ver producto</a>
+              </div>
+
+              <div id="producto-3" class="producto">
+                <img src="./img/producto-3.png" alt="Imagen del producto" />
+                <h2>Producto XYZ</h2>
+                <p>$ 60,00</p>
+                <a href="">Ver producto</a>
+              </div>
+
+              <div id="producto-4" class="producto">
+                <img src="./img/producto-4.png" alt="Imagen del producto" />
+                <h2>Producto XYZ</h2>
+                <p>$ 60,00</p>
+                <a href="">Ver producto</a>
+              </div>
+
+              <div id="producto-5" class="producto">
+                <img src="./img/producto-5.png" alt="Imagen del producto" />
+                <h2>Producto XYZ</h2>
+                <p>$ 60,00</p>
+                <a href="">Ver producto</a>
+              </div>
+
+              <div id="producto-6" class="producto">
+                <img src="./img/producto-6.png" alt="Imagen del producto" />
+                <h2>Producto XYZ</h2>
+                <p>$ 60,00</p>
+                <a href="">Ver producto</a>
+              </div>
+            </div>
+
+
+
+
+
         </div>
       </section>
 

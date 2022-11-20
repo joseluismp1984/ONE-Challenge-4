@@ -33,12 +33,17 @@
 }
 .promocion-boton {
   border-style: none;
+  text-decoration: none;
   width: 118px;
   height: 40px;
   font-size: 12px;
   color: white;
   font-weight: 700;
   background-color: #2a7ae4;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 /*###################################*/
 @media screen and (min-width: 575px) {
