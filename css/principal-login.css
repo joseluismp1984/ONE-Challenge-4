@@ -36,6 +36,10 @@
   padding: 5px;
 }
 
+.login-email:valid {
+  background-color: white;
+}
+
 .login-enviar {
   border-style: none;
   width: 50%;

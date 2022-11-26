@@ -153,31 +153,36 @@
 
           <form id="form" class="form" action="">
             <h2 id="form-titulo" class="form-titulo">Hable con nosotros</h2>
+
             <input
               id="form-nombre"
-              class="form-nombre"
+              class="form-nombre entrada"
               name="nombre"
               type="text"
               placeholder="Escribe tu nombre"
               pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$"
               title="solo acepta letras y espacios en blanco"
-              minlength="6"
-              maxlength="35"
+              data-tipo="nombre"
+              maxlength="40"
               autocomplete="off"
               required
             />
+
             <textarea
               id="form-mensaje"
-              class="form-mensaje"
-              name="form-mensaje"
+              class="form-mensaje entrada"
+              name="mensaje"
               cols="30"
               rows="10"
               placeholder="Escribe tu mensaje"
-              minlength="10"
-              maxlength="500"
+              pattern="[\s\S]{10,40}"
+              title="Acepta todo tipo de letras, numeros y caracteres especiales"
+              data-tipo="mensaje"
+              maxlength="120"
               autocomplete="off"
               required
             ></textarea>
+
             <input
               id="form-boton"
               class="form-boton"
@@ -196,5 +201,6 @@
         <p id="parrafo-1" class="parrafo-1">&copy 2022</p>
       </div>
     </footer>
+    <script type="module" src="./js/app-formulario.js"></script>
   </body>
 </html>

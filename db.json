@@ -1,0 +1,15 @@
+{
+  "productos": [{}, {}, {}],
+  "usuarios": [
+    {
+      "correo": "joseluismp1984@gmail.com",
+      "contraseña": "Agifhv81",
+      "rol": "administrador"
+    },
+    {
+      "correo": "anacasalla@gmail.com",
+      "contraseña": "56Htuvz",
+      "rol": "cliente"
+    }
+  ]
+}
