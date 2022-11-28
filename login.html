@@ -82,14 +82,19 @@
               type="password"
               name="password"
               pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?!.*[ !@#$%^&*_=+-]).{6,12}$"
-              title="Debe contener mayusculas, minusculas, digitos y sin espacios. Longitud de 6 a 12 caracteres"
+              title="Debe contener al menos una mayuscula, una minuscula, un digito y sin espacios ni caracteres especiales. Longitud de 6 a 12 caracteres"
               data-tipo="password"
               minlength="6"
               maxlength="12"
               autocomplete="off"
               required
             />
-            <input class="login-enviar" type="submit" value="Entrar" />
+            <input
+              id="login-enviar"
+              class="login-enviar"
+              type="submit"
+              value="Entrar"
+            />
           </form>
         </div>
       </section>
@@ -163,5 +168,6 @@
       </div>
     </footer>
     <script type="module" src="./js/app-formulario.js"></script>
+    <script type="module" src="./js/autenticacion-login.js"></script>
   </body>
 </html>

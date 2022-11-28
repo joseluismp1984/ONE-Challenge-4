@@ -57,7 +57,10 @@
           />
         </div>
 
-        <a id="encabezado-login" class="encabezado-login" href="#"
+        <a
+          id="encabezado-login"
+          class="encabezado-login"
+          href="./productos.html"
           >Menú Administrador</a
         >
 
@@ -74,53 +77,71 @@
         <div id="contenedor-agregar" class="contenedor-agregar">
           <form id="agregar-prod" class="agregar-prod" action="">
             <h2 class="agregar-titulo">Agregar nuevo producto</h2>
+
             <input
-              class="forma-input"
+              class="forma-input entrada"
+              name="imgBase64"
+              id="imgBase64"
               type="url"
               placeholder="URL de la imagen"
+              pattern="^((?:data:image/png;base64,)?[A-Za-z0-9+/]{4})*([A-Za-z0-9+/]{4}|[A-Za-z0-9+/]{3}=|[A-Za-z0-9+/]{2}==)$"
+              tittle="Preferiblemente imagenes en base 64"
+              data-tipo="imgBase64"
               autocomplete="off"
               required
             />
-            <!-- 
-              pattern="([A-Z]:\\[^/:\*\?<>\|]+\.\w{2,6})|(\\{2}[^/:\*\?<>\|]+\.\w{2,6})"
-              title="Debe ser de la forma: C:\temp\this allows spaces\web.config" -->
+
             <input
-              class="forma-input"
+              class="forma-input entrada"
+              name="categoria"
+              id="categoria"
               type="text"
-              placeholder="Categoria"
-              pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$"
+              placeholder="Categoria de producto"
+              pattern="[\s\S]{5,40}"
+              title="Acepta todo tipo de letras, numeros y caracteres especiales"
               title="solo acepta letras y espacios en blanco"
+              data-tipo="categoria"
+              maxlength="40"
               autocomplete="off"
               required
             />
             <input
-              class="forma-input"
+              class="forma-input entrada"
+              name="nombreProducto"
+              id="nombreProducto"
               type="text"
               placeholder="Nombre del producto"
-              pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$"
-              title="solo acepta letras y espacios en blanco"
+              pattern="[\s\S]{10,40}"
+              title="Acepta todo tipo de letras, numeros y caracteres especiales"
+              data-tipo="nombreProducto"
+              maxlength="40"
               autocomplete="off"
               required
             />
             <input
-              class="forma-input"
+              class="forma-input entrada"
+              name="precio"
+              id="precio"
               type="text"
               placeholder="Precio del producto"
-              pattern="^\$?([1-9]{1}[0-9]{0,2}(\,[0-9]{3})*(\.[0-9]{0,2})?|[1-9]{1}[0-9]{0,}(\.[0-9]{0,2})?|0(\.[0-9]{0,2})?|(\.[0-9]{1,2})?)$"
-              title="Puede tener $ numeros coma y puntos"
+              pattern="[$][0 -9]+"
+              title="debe tener simbolo $, numeros, coma y puntos. ejemplo: $123,123.00"
+              data-tipo="precio"
+              maxlength="10"
               autocomplete="off"
               required
             />
             <textarea
-              class="forma-input"
-              name=""
-              id=""
+              class="forma-input entrada"
+              name="descripcion"
+              id="descripcion"
               cols="30"
               rows="5"
               placeholder="Descripción del producto"
-              pattern="[a-z0-9ñçáéíóú\s]"
-              title="Solo letras numeros y espacios en blanco"
-              maxlength="500"
+              pattern="[\s\S]{10,40}"
+              title="Acepta todo tipo de letras, numeros y caracteres especiales"
+              data-tipo="descripcion"
+              maxlength="120"
               autocomplete="off"
               required
             ></textarea>

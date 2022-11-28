@@ -26,6 +26,30 @@ const mensajesDeError = {
     patternMismatch:
       "Al menos una letra mayuscula, una minuscula, un digito, sin caracteres especiales y sin espacios. Longitud entre 6 y 12 caracteres",
   },
+  imgBase64: {
+    valueMissing: "El campo contraseña no puede estar vacío",
+    patternMismatch: "Debe ser el código de una imagen en base 64",
+  },
+  categoria: {
+    valueMissing: "El campo categoria de producto no puede estar vacío",
+    patternMismatch:
+      "Acepta todo tipo de letras, numeros y caracteres especiales",
+  },
+  nombreProducto: {
+    valueMissing: "El campo nombre de producto no puede estar vacío",
+    patternMismatch:
+      "Acepta todo tipo de letras, numeros y caracteres especiales",
+  },
+  precio: {
+    valueMissing: "El campo precio de producto no puede estar vacío",
+    patternMismatch:
+      "debe tener simbolo $, numeros, coma y puntos. ejemplo: $123,123.00",
+  },
+  descripcion: {
+    valueMissing: "El campo descripción de producto no puede estar vacío",
+    patternMismatch:
+      "Acepta todo tipo de letras, numeros y caracteres especiales",
+  },
 };
 /*##########################################*/
 
