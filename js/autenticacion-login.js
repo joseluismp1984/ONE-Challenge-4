@@ -28,7 +28,7 @@ botonEntrar.addEventListener("click", (evento) => {
 
       if (autenticado === true) {
         console.log("Usuario Existente");
-        location.replace("./productos.html");
+        window.location.href ="./productos.html";
       } else {
         alert("Usuario No Existe");
       }
