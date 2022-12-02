@@ -11,6 +11,8 @@
 
   justify-content: center;
   align-items: center;
+
+  gap: 16px;
 }
 /*-------------------------------*/
 .categorias {
@@ -90,6 +92,7 @@
 @media screen and (min-width: 575px) {
   .contenedor-principal {
     padding: 32px;
+    gap: 32px;
   }
   .btn-ver-todo {
     font-size: 16px;
@@ -115,6 +118,7 @@
   .contenedor-principal {
     width: 80%;
     padding: 64px;
+    gap: 64px;
   }
   .titulo-categoria {
     font-size: 32px;
