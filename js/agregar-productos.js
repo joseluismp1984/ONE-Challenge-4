@@ -65,9 +65,7 @@ const agregarProducto = (categoria, imagen, nombre, precio, descripcion) => {
     }),
   });
 };
-
 /*----------------------------------------*/
-
 const formulario = document.querySelector("[data-agregarProducto]");
 
 formulario.addEventListener("submit", (evento) => {

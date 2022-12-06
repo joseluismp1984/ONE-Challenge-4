@@ -26,7 +26,7 @@ const nombreCategoria = (categoria) => {
   const div = document.createElement("div");
   div.classList.add("nombre-categoria");
 
-  const contenidoCategoria = `<h2 id="titulo-categoria" class="titulo-categoria">${categoria}</h2>
+  const contenidoCategoria = `<h2 id="titulo-${categoria}" class="titulo-categoria">${categoria}</h2>
   <a id="btn-ver-todo" class="btn-ver-todo" href="./productos.html">Ver todo
   <img src="./img/icono-flecha-categoria.svg"
   alt="Icono flecha de categorias"/>

@@ -7,16 +7,15 @@ const todosProductos = () => {
 };
 /*--------------------------------------------------*/
 // CREAMOS LA FICHA DE CADA PRODUCTO CON ESTA FUNCIÓN.
-const nuevoProducto = (imagen, nombre, precio, codigo) => {
+const nuevoProducto = (imagen, nombre, precio, codigo, id) => {
   const div = document.createElement("div");
   div.classList.add("producto");
 
   const contenidoProducto = `<img
                   class="icono-eliminar"
                   src="./img/icono-papelera.svg"
-                  alt=""
-                />
-                <img class="icono-editar" src="./img/icono-editar.svg" alt="" />
+                  alt="icono de papelera" id="${id}" data-eliminar/>
+                  <a href="./editar.html?id=${id}"><img class="icono-editar" src="./img/icono-editar.svg" alt="icono de editar" id="${id}" data-editar /></a>
                 <img
                   class="producto-img"
                   src="${imagen}"
@@ -30,6 +29,7 @@ const nuevoProducto = (imagen, nombre, precio, codigo) => {
 
   return div;
 };
+
 /*--------------------------------------------------*/
 // CREAMOS ENCABEZADO DE CADA CATEGORIA EN ESTA FUNCIÓN.
 const nombreCategoria = () => {
@@ -79,7 +79,8 @@ const render = async () => {
           producto.imagen,
           producto.nombre,
           producto.precio,
-          producto.codigo
+          producto.codigo,
+          producto.id
         )
       );
     });
@@ -87,8 +88,23 @@ const render = async () => {
     divCategorias.appendChild(nombreCategoria());
     divCategorias.appendChild(divGaleria);
     contenedorProductos.appendChild(divCategorias);
+
+    const papelera = document.querySelectorAll("[data-eliminar]");
+    papelera.forEach((elemento) => {
+      elemento.addEventListener("click", () => {
+        eliminarProducto(elemento.id);
+      });
+    });
   } catch (erro) {
     alert("Hubo un Error");
   }
 };
 render();
+/*--------------------------------------------------*/
+// FUNCIÓN QUE ELIMINA UN PRODUCTO DE LA BD.
+const eliminarProducto = (id) => {
+  return fetch(`http://localhost:3000/productos/${id}`, {
+    method: "DELETE",
+  });
+};
+/*--------------------------------------------------*/
